@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Playfair Display', serif;
+}
+
+@mixin align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    color: #fff;
+}
+.dark {
+    color: #0b090a;
+}
+
+.site-wrapper {
+    width: 100%;
+    margin: 0px;
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        padding: 70px 0px 70px 0px;
+        position: relative;
+        @include align-center;    
+
+        .container-text {
+            width: 800px;
+            margin: auto;
+
+            .short-description{
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 1.6;
+                text-align: justify;
+            }
+    
+            @media (max-width:700px) {
+                .short-description{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        @media (max-width:900px) {
+            .container-text {
+                width: 80%;
+            }
+        }
+
+        @media (max-width:700px) {
+            .container-text {
+                width: 60%;
+            }
+        }             
+            
+    }
+
+    .intro {
+        background: #0b090a;
+        overflow: hidden;
+        padding-top: 0px;
+
+        .main-heading {
+            font-size: 8vw;
+            color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            background: linear-gradient(
+                to right,
+                #ed8080 0%,
+                #2a77d6 16%,
+                #5eb524 32%,
+                #eacd25 48%,
+                #ed8080 64%,
+                #2a77d6 80%,
+                #5eb524 100%
+            );
+            background-size: 300% 300%;
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-color: #222;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            animation: shimmer infinite 3s linear;
+            position: relative;
+        }
+    
+        .main-sub-heading {
+            font-size: 6vw;
+            color: #fff; 
+            text-align: center;
+            position: relative;
+        }
+    }
+
+    .top-float-text, .bottom-float-text {
+        position: absolute;
+
+        .float-text {
+            font-size: 3vw;
+            line-height: 1.6;
+            transform: rotate(90deg);
+        }
+    }
+
+    #top-float-text-1 {
+        top:-600px;
+        right:-17%;
+    }
+
+    #bottom-float-text-1 {
+        bottom:-500px;
+        left:-22%;
+    } 
+
+    #top-float-text-2 {
+        top:-1680px;
+        right:-17%;
+    }
+
+    #bottom-float-text-2 {
+        bottom:-1560px;
+        left:-24%;
+    } 
+
+
+    .picture-1 {
+        background: url(/images/Yercard.jpg) no-repeat center center fixed;
+        background-size: cover;
+        .picture-heading {
+            color: #fff; 
+        }
+    }
+
+    .picture-2 {
+        background: url(/images/Gandikota3.jpg) no-repeat center center fixed;
+        background-size: cover;
+        .picture-heading {
+            color: #fff; 
+        }
+    }
+
+    .picture-heading {
+        font-size: 6vw;
+        text-align: center;
+        position: relative;
+    }
+
+    .container-1 {
+        background:#ffbf69;
+        overflow:hidden;
+        
+        .short-description{
+            color: #0b090a; 
+        }
+    }
+
+    .container-2 {
+        background:#7f5539;
+        overflow:hidden;
+
+        .short-description{
+            color: #fff; 
+        }
+    }
+
+}
+
+
+// Animations
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}

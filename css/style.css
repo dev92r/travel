@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Playfair Display', serif;
+}
+
+.light {
+  color: #fff;
+}
+
+.dark {
+  color: #0b090a;
+}
+
+.site-wrapper {
+  width: 100%;
+  margin: 0px;
+}
+
+.site-wrapper .container {
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0px 70px 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-wrapper .container .container-text {
+  width: 800px;
+  margin: auto;
+}
+
+.site-wrapper .container .container-text .short-description {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media (max-width: 700px) {
+  .site-wrapper .container .container-text .short-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-wrapper .container .container-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-wrapper .container .container-text {
+    width: 60%;
+  }
+}
+
+.site-wrapper .intro {
+  background: #0b090a;
+  overflow: hidden;
+  padding-top: 0px;
+}
+
+.site-wrapper .intro .main-heading {
+  font-size: 8vw;
+  color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#ed8080), color-stop(16%, #2a77d6), color-stop(32%, #5eb524), color-stop(48%, #eacd25), color-stop(64%, #ed8080), color-stop(80%, #2a77d6), to(#5eb524));
+  background: linear-gradient(to right, #ed8080 0%, #2a77d6 16%, #5eb524 32%, #eacd25 48%, #ed8080 64%, #2a77d6 80%, #5eb524 100%);
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: #222;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: shimmer infinite 3s linear;
+          animation: shimmer infinite 3s linear;
+  position: relative;
+}
+
+.site-wrapper .intro .main-sub-heading {
+  font-size: 6vw;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.site-wrapper .top-float-text, .site-wrapper .bottom-float-text {
+  position: absolute;
+}
+
+.site-wrapper .top-float-text .float-text, .site-wrapper .bottom-float-text .float-text {
+  font-size: 3vw;
+  line-height: 1.6;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.site-wrapper #top-float-text-1 {
+  top: -600px;
+  right: -17%;
+}
+
+.site-wrapper #bottom-float-text-1 {
+  bottom: -500px;
+  left: -22%;
+}
+
+.site-wrapper #top-float-text-2 {
+  top: -1680px;
+  right: -17%;
+}
+
+.site-wrapper #bottom-float-text-2 {
+  bottom: -1560px;
+  left: -24%;
+}
+
+.site-wrapper .picture-1 {
+  background: url(/images/Yercard.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.site-wrapper .picture-1 .picture-heading {
+  color: #fff;
+}
+
+.site-wrapper .picture-2 {
+  background: url(/images/Gandikota3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.site-wrapper .picture-2 .picture-heading {
+  color: #fff;
+}
+
+.site-wrapper .picture-heading {
+  font-size: 6vw;
+  text-align: center;
+  position: relative;
+}
+
+.site-wrapper .container-1 {
+  background: #ffbf69;
+  overflow: hidden;
+}
+
+.site-wrapper .container-1 .short-description {
+  color: #0b090a;
+}
+
+.site-wrapper .container-2 {
+  background: #7f5539;
+  overflow: hidden;
+}
+
+.site-wrapper .container-2 .short-description {
+  color: #fff;
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+/*# sourceMappingURL=style.css.map */
