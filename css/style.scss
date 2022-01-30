@@ -38,19 +38,21 @@
                 font-size: 30px;
                 font-weight: 300;
                 line-height: 1.6;
+                color: #fff;
                 text-align: justify;
             }
     
             @media (max-width:700px) {
                 .short-description{
                     font-size: 20px;
+                    text-align: left;
                 }
             }
         }
 
         @media (max-width:900px) {
             .container-text {
-                width: 80%;
+                width: 70%;
             }
         }
 
@@ -108,17 +110,40 @@
             line-height: 1.6;
             transform: rotate(90deg);
         }
+        @media (min-width:1441px) {
+            .float-text {
+                font-size: 2.3vw;
+            }
+        }   
     }
 
     #top-float-text-1 {
         top:-600px;
         right:-17%;
     }
-
+    
     #bottom-float-text-1 {
-        bottom:-500px;
+        bottom:-450px;
         left:-22%;
     } 
+
+    @media (max-width:600px) {
+        #top-float-text-1 {
+            top:-660px;
+        }
+        #bottom-float-text-1 {
+            bottom:-784px;
+        } 
+    }
+
+    @media (min-width:1441px) {
+        #top-float-text-1 {
+            right:-13%;
+        }
+        #bottom-float-text-1 {
+            left:-17%;
+        } 
+    }
 
     #top-float-text-2 {
         top:-1680px;
@@ -130,48 +155,250 @@
         left:-24%;
     } 
 
-
-    .picture-1 {
-        background: url(/images/Yercard.jpg) no-repeat center center fixed;
-        background-size: cover;
-        .picture-heading {
-            color: #fff; 
+    @media (max-width:600px) {
+        #top-float-text-2 {
+            top:-1771px;
         }
+        #bottom-float-text-2 {
+            bottom:-1910px;
+        } 
     }
 
-    .picture-2 {
-        background: url(/images/Gandikota.jpg) no-repeat center center fixed;
-        background-size: cover;
-        .picture-heading {
-            color: #fff; 
+    @media (min-width:1441px) {
+        #top-float-text-2 {
+            right:-13%;
         }
+        #bottom-float-text-2 {
+            left:-18.4%;
+        } 
+    }
+
+    #top-float-text-3 {
+        top:-2765px;
+        right:-17%;
+    }
+
+    #bottom-float-text-3 {
+        bottom:-2640px;
+        left:-23.5%;
+    } 
+
+    @media (max-width:600px) {
+        #top-float-text-3 {
+            top:-2892px;
+        }
+        #bottom-float-text-3 {
+            bottom:-3008px;
+        } 
+    }
+
+    @media (min-width:1441px) {
+        #top-float-text-3 {
+            right:-13%;
+        }
+        #bottom-float-text-3 {
+            left:-18%;
+        } 
+    }
+
+    #top-float-text-4 {
+        top:-3848px;
+        right:-17%;
+    }
+
+    #bottom-float-text-4 {
+        bottom:-3706px;
+        left:-22%;
+    } 
+
+    @media (max-width:600px) {
+        #top-float-text-4 {
+            top:-4004px;
+        }
+        #bottom-float-text-4 {
+            bottom:-4118px;
+        } 
+    }
+
+    @media (min-width:1441px) {
+        #top-float-text-4 {
+            right:-13%;
+        }
+        #bottom-float-text-4 {
+            left:-17%;
+        } 
+    }
+
+    #top-float-text-5 {
+        top:-4934px;
+        right:-17%;
+    }
+
+    #bottom-float-text-5 {
+        bottom:-4762px;
+        left:-20.3%;
+    } 
+
+    @media (max-width:600px) {
+        #top-float-text-5 {
+            top:-5123px;
+        }
+        #bottom-float-text-5 {
+            bottom:-5222px;
+        } 
+    }
+
+    @media (min-width:1441px) {
+        #top-float-text-5 {
+            right:-13%;
+        }
+        #bottom-float-text-5 {
+            left:-15.5%;
+        } 
+    }
+
+    #top-float-text-6 {
+        top:-6021px;
+        right:-17%;
+    }
+
+    #bottom-float-text-6 {
+        bottom:-5898px;
+        left:-23.8%;
+    } 
+
+    @media (max-width:600px) {
+        #top-float-text-6 {
+            top:-6231px;
+        }
+        #bottom-float-text-6 {
+            bottom:-6355px;
+        } 
+    }
+
+    @media (min-width:1441px) {
+        #top-float-text-6 {
+            right:-13%;
+        }
+        #bottom-float-text-6 {
+            left:-18%;
+        } 
+    }
+
+    #top-float-text-7 {
+        top:-7108px;
+        right:-17%;
+    }
+
+    #bottom-float-text-7 {
+        bottom:-6978px;
+        left:-23.8%;
+    } 
+
+    @media (max-width:600px) {
+        #top-float-text-7 {
+            top:-7345px;
+        }
+        #bottom-float-text-7 {
+            bottom:-7470px;
+        } 
+    }
+
+    @media (min-width:1441px) {
+        #top-float-text-7 {
+            right:-13%;
+        }
+        #bottom-float-text-7 {
+            left:-17.9%;
+        } 
     }
 
     .picture-heading {
         font-size: 6vw;
         text-align: center;
         position: relative;
+        color: #fff;
     }
 
+    .picture-1 {
+        background: url(/images/Yercard.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .picture-2 {
+        background: url(/images/Gandikota.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .picture-3 {
+        background: url(/images/Kovalam.jpeg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .picture-3 {
+        background: url(/images/Kovalam.jpeg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .picture-4 {
+        background: url(/images/Agumbe.jpeg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .picture-5 {
+        background: url(/images/Badami.jpeg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .picture-6 {
+        background: url(/images/EttinaBuja.jpeg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .picture-7 {
+        background: url(/images/Goa.jpeg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+
     .container-1 {
-        background:#ffbf69;
+        background:#dda15e;
         overflow:hidden;
-        
-        .short-description{
-            color: #0b090a; 
-        }
     }
 
     .container-2 {
         background:#7f5539;
         overflow:hidden;
-
-        .short-description{
-            color: #fff; 
-        }
     }
 
+    .container-3 {
+        background:#669bbc;
+        overflow:hidden;
+    }
+
+    .container-4 {
+        background:#414833;
+        overflow:hidden;
+    }
+
+    .container-5 {
+        background:#8e412e;
+        overflow:hidden;
+    }
+
+    .container-6 {
+        background:#495057;
+        overflow:hidden;
+    }
+
+    .container-7 {
+        background:#a98467;
+        overflow:hidden;
+    }
+
+    
 }
+
 
 
 // Animations
