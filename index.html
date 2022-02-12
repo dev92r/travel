@@ -11,7 +11,7 @@
 <body>
     <div class="site-wrapper">
 
-        <div class="container intro">
+        <div class="container intro" id="top">
             <div class="intro-text">
                 <h1 class="main-heading" id="main-heading">MEMORIES OF TRAVEL</h1>
                 <h2 class="main-sub-heading" id="main-sub-heading">Wander Often, Wonder Always.</h2>
@@ -393,7 +393,8 @@
             </div>
         </div>
         <div class="credits" align="center">
-            <a href="https://dev92r.github.io/V1/"><p class="credits-text">Designed and Built by Dev</p></a>
+            <div class="scrollToprocket" id="rocketbtn" onclick="scrollTopAnimated()"><img src="/images/Compressed/rocket.png"></div>
+            <p class="credits-text">Designed and Built by Dev</p>
             <p class="credits-text-smaller">All photographic images are my own, fork this repo on <a href="https://github.com/dev92r/travel">GitHub</a></p>
             <p class="credits-text-smaller"></p>
 
@@ -412,8 +413,8 @@
     </div>
 
     
-
 <script src="./js/script.js"></script>
+<script src="/js/jquery-3.4.1.min.js"></script>
 <script src="./js/rellax.min.js"></script>
 <script>
     // Also can pass in optional settings block

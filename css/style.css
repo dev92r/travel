@@ -5,6 +5,10 @@
   font-family: 'Playfair Display', serif;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .light {
   color: #fff;
 }
@@ -1330,7 +1334,8 @@
 
 .site-wrapper .credits {
   background: #0b090a;
-  padding: 30px 10px;
+  padding: 0px 10px 20px 10px;
+  margin-top: -50px;
 }
 
 .site-wrapper .credits a {
@@ -1377,6 +1382,24 @@
 .site-wrapper .social-media-links svg {
   width: 22px;
   padding: 0px 10px;
+}
+
+.site-wrapper .scrollToprocket {
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  -webkit-transition: top 400ms ease-in-out;
+  transition: top 400ms ease-in-out;
+}
+
+.site-wrapper .scrollToprocket img {
+  width: 60px;
+}
+
+.site-wrapper .scrollToprocket:hover {
+  cursor: pointer;
+  top: 0px;
 }
 
 .fade-in {

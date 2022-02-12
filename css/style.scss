@@ -7,6 +7,10 @@
     font-family: 'Playfair Display', serif;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 @mixin align-center {
     display: flex;
     justify-content: center;
@@ -1340,7 +1344,8 @@
 
     .credits {
         background: #0b090a;
-        padding: 30px 10px;
+        padding: 0px 10px 20px 10px;
+        margin-top: -50px;
 
         a {
             text-decoration: none;
@@ -1395,6 +1400,21 @@
         }
     }
 
+    .scrollToprocket {
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        top: 6px;
+        transition: top 400ms ease-in-out;
+
+        img {
+            width: 60px;
+        }
+    }
+    .scrollToprocket:hover {
+        cursor: pointer;
+        top: 0px;
+    }
 }
 
 

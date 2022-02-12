@@ -41,3 +41,7 @@ const appearOnScroll = new IntersectionObserver(function(
     appearOnScroll.observe(slider);
   });
       
+  function scrollTopAnimated() {
+    $("html, body").animate(
+      { scrollTop: "0" },4000);
+}
