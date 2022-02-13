@@ -112,11 +112,20 @@ body {
         }
     }
     .outro {
+        background-image: url(/images/Compressed/Outro.jpg);
         overflow: hidden;
+        background-size: cover;
+        background-position-y:28%;
+        background-repeat: no-repeat;
     }
-
-   
-
+    .outro::before {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        padding: 70px;
+    }
 
     .top-float-text {
         position: absolute;
@@ -152,7 +161,7 @@ body {
         }   
     }
     
-    @media (max-width:500px) {
+    @media (max-width:1200px) {
         .top-float-text,
         .bottom-float-text {
             display: none;
@@ -168,17 +177,6 @@ body {
         bottom:-450px;
         left:-22%;
     } 
-
-
-    @media (max-width:600px) {
-        #top-float-text-1 {
-            top:-660px;
-        }
-        #bottom-float-text-1 {
-            bottom:-784px;
-        } 
-    }
-
 
     @media (min-width:1441px) {
         #top-float-text-1 {
@@ -199,15 +197,6 @@ body {
         left:-24%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-2 {
-            top:-1771px;
-        }
-        #bottom-float-text-2 {
-            bottom:-1910px;
-        } 
-    }
-
     @media (min-width:1441px) {
         #top-float-text-2 {
             right:-13%;
@@ -226,16 +215,6 @@ body {
         bottom:-2640px;
         left:-23.5%;
     } 
-
-    @media (max-width:600px) {
-        #top-float-text-3 {
-            top:-2892px;
-        }
-        #bottom-float-text-3 {
-            bottom:-3008px;
-        } 
-    }
-
    
     @media (min-width:1441px) {
         #top-float-text-3 {
@@ -258,16 +237,6 @@ body {
         left:-22%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-4 {
-            top:-4004px;
-        }
-        #bottom-float-text-4 {
-            bottom:-4118px;
-        } 
-    }
-
-  
 
     @media (min-width:1441px) {
         #top-float-text-4 {
@@ -290,16 +259,6 @@ body {
         left:-20.3%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-5 {
-            top:-5123px;
-        }
-        #bottom-float-text-5 {
-            bottom:-5222px;
-        } 
-    }
-
-    
 
     @media (min-width:1441px) {
         #top-float-text-5 {
@@ -322,16 +281,6 @@ body {
         left:-24%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-6 {
-            top:-6231px;
-        }
-        #bottom-float-text-6 {
-            bottom:-6355px;
-        } 
-    }
-
-    
 
     @media (min-width:1441px) {
         #top-float-text-6 {
@@ -352,18 +301,7 @@ body {
     #bottom-float-text-7 {
         bottom:-6978px;
         left:-23.5%;
-    } 
-
-    @media (max-width:600px) {
-        #top-float-text-7 {
-            top:-7345px;
-        }
-        #bottom-float-text-7 {
-            bottom:-7470px;
-        } 
-    }
-
-    
+    }     
 
     @media (min-width:1441px) {
         #top-float-text-7 {
@@ -386,15 +324,6 @@ body {
         left:-22%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-8 {
-            top:-8500px;
-        }
-        #bottom-float-text-8 {
-            bottom:-8619px;
-        } 
-    }
-
     
     @media (min-width:1441px) {
         #top-float-text-8 {
@@ -416,16 +345,6 @@ body {
         bottom:-9282px;
         left:-23%;
     } 
-
-    @media (max-width:600px) {
-        #top-float-text-9 {
-            top:-9618px;
-        }
-        #bottom-float-text-9 {
-            bottom:-9745px;
-        } 
-    }
-
     
 
     @media (min-width:1441px) {
@@ -449,16 +368,6 @@ body {
         left:-20.3%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-10 {
-            top:-10743px;
-        }
-        #bottom-float-text-10 {
-            bottom:-10849px;
-        } 
-    }
-
-    
 
     @media (min-width:1441px) {
         #top-float-text-10 {
@@ -480,15 +389,6 @@ body {
         bottom:-11282px;
         left:-20.3%;
     } 
-
-    @media (max-width:600px) {
-        #top-float-text-11 {
-            top:-11859px;
-        }
-        #bottom-float-text-11 {
-            bottom:-11976px;
-        } 
-    }
 
     
 
@@ -513,15 +413,6 @@ body {
         left:-22%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-12 {
-            top:-12986px;
-        }
-        #bottom-float-text-12 {
-            bottom:-13099px;
-        } 
-    }
-
    
 
     @media (min-width:1441px) {
@@ -545,16 +436,6 @@ body {
         left:-20.3%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-13 {
-            top:-14099px;
-        }
-        #bottom-float-text-13 {
-            bottom:-14212px;
-        } 
-    }
-
-    
 
     @media (min-width:1441px) {
         #top-float-text-13 {
@@ -577,16 +458,6 @@ body {
         left:-23%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-14 {
-            top:-15220px;
-        }
-        #bottom-float-text-14 {
-            bottom:-15343px;
-        } 
-    }
-
-    
 
     @media (min-width:1441px) {
         #top-float-text-14 {
@@ -608,16 +479,6 @@ body {
         bottom:-15700px;
         left:-22%;
     } 
-
-    @media (max-width:600px) {
-        #top-float-text-15 {
-            top:-16338px;
-        }
-        #bottom-float-text-15 {
-            bottom:-16462px;
-        } 
-    }
-
     
 
     @media (min-width:1441px) {
@@ -640,15 +501,6 @@ body {
         bottom:-16770px;
         left:-23%;
     } 
-
-    @media (max-width:600px) {
-        #top-float-text-16 {
-            top:-17458px;
-        }
-        #bottom-float-text-16 {
-            bottom:-17589px;
-        } 
-    }
 
    
 
@@ -673,15 +525,6 @@ body {
         left:-19%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-17 {
-            top:-18581px;
-        }
-        #bottom-float-text-17 {
-            bottom:-18689px;
-        } 
-    }
-    
     
 
     @media (min-width:1441px) {
@@ -704,16 +547,6 @@ body {
         bottom:-18890px;
         left:-19%;
     } 
-
-    @media (max-width:600px) {
-        #top-float-text-18 {
-            top:-19702px;
-        }
-        #bottom-float-text-18 {
-            bottom:-19801px;
-        } 
-    }
-
    
 
     @media (min-width:1441px) {
@@ -737,16 +570,6 @@ body {
         left:-19.5%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-19 {
-            top:-20821px;
-        }
-        #bottom-float-text-19 {
-            bottom:-20925px;
-        } 
-    }
-
-   
 
     @media (min-width:1441px) {
         #top-float-text-19 {
@@ -769,16 +592,6 @@ body {
         left:-22.4%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-20 {
-            top:-21941px;
-        }
-        #bottom-float-text-20 {
-            bottom:-22057px;
-        } 
-    }
-
-   
 
     @media (min-width:1441px) {
         #top-float-text-20 {
@@ -801,15 +614,6 @@ body {
         left:-20.3%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-21 {
-            top:-23061px;
-        }
-        #bottom-float-text-21 {
-            bottom:-23168px;
-        } 
-    }
-
     
 
     @media (min-width:1441px) {
@@ -830,19 +634,9 @@ body {
 
     #bottom-float-text-22 {
         bottom:-23262px;
-        left:-20.3%;
+        left:-22%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-22 {
-            top:-24177px;
-        }
-        #bottom-float-text-22 {
-            bottom:-24296px;
-        } 
-    }
-
-    
 
     @media (min-width:1441px) {
         #top-float-text-22 {
@@ -851,7 +645,7 @@ body {
         }
         #bottom-float-text-22 {
             bottom:-22847px;
-            left:-15.5%;
+            left:-17%;
         } 
     }
 
@@ -865,15 +659,6 @@ body {
         left:-18.7%;
     } 
 
-    @media (max-width:600px) {
-        #top-float-text-23 {
-            top:-25298px;
-        }
-        #bottom-float-text-23 {
-            bottom:-25400px;
-        } 
-    }
-
     
 
     @media (min-width:1441px) {
@@ -884,6 +669,49 @@ body {
         #bottom-float-text-23 {
             bottom:-23896px;
             left:-14.5%;
+        } 
+    }
+
+    #top-float-text-24 {
+        top:-25557px;
+        right:-17%;
+    }
+
+    #bottom-float-text-24 {
+        bottom:-25426px;
+        left:-18.7%;
+    } 
+
+    @media (min-width:1441px) {
+        #top-float-text-24 {
+            top:-25162px;
+            right:-13%;
+        }
+        #bottom-float-text-24 {
+            bottom:-24966px;
+            left:-14.5%;
+        } 
+    }
+
+    #top-float-text-25 {
+        top:-26645px;
+        right:-17%;
+    }
+
+    #bottom-float-text-25 {
+        bottom:-26426px;
+        left:-22%;
+    } 
+
+
+    @media (min-width:1441px) {
+        #top-float-text-25 {
+            top:-26227px;
+            right:-13%;
+        }
+        #bottom-float-text-25 {
+            bottom:-26079px;
+            left:-17%;
         } 
     }
 
@@ -1045,27 +873,29 @@ body {
     }
 
     .picture-21 {
-        background: url(../images/Compressed/Devaramane.jpg) no-repeat center 65% fixed;
+        background: url(../images/Compressed/Devaramane.jpg) no-repeat center 75% fixed;
         background-size: cover;
     }
 
     .picture-22 {
-        background: url(../images/Compressed/Shravanabelagola.jpg) no-repeat center 18% fixed;
+        background: url(../images/Compressed/Gokarna.jpg) no-repeat center center fixed;
         background-size: cover;
     }
 
     .picture-23 {
-        background: url(../images/Compressed/Waynad.jpg) no-repeat center 44% fixed;
+        background: url(../images/Compressed/Waynad.jpg) no-repeat center center fixed;
         background-size: cover;
     }
 
-    @media (max-width:700px) {
-        .picture-23 {
-            background: url(../images/Compressed/Waynad.jpg) no-repeat 27% 44% fixed;
-            background-size: cover;
-        }
+    .picture-24 {
+        background: url(../images/Compressed/Coorg.jpg) no-repeat center center fixed;
+        background-size: cover;
     }
 
+    .picture-25 {
+        background: url(../images/Compressed/Jog.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
 
 
     .container-1 {
@@ -1179,14 +1009,24 @@ body {
     }
 
     .container-23 {
-        background:#3b3355;
+        background:#728c35;
+        overflow:hidden;
+    }
+
+    .container-24 {
+        background:#685044;
+        overflow:hidden;
+    }
+
+    .container-25 {
+        background:#333533;
         overflow:hidden;
     }
 
     .credits {
         background: #0b090a;
-        padding: 0px 10px 20px 10px;
-        margin-top: -50px;
+        padding: 10px 10px 20px 10px;
+        margin-top: 0px;
 
         a {
             text-decoration: none;
@@ -1249,7 +1089,7 @@ body {
         transition: top 400ms ease-in-out;
 
         img {
-            width: 60px;
+            width: 50px;
         }
     }
     .scrollToprocket:hover {
