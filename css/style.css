@@ -107,7 +107,7 @@ body {
 }
 
 .site-wrapper .outro {
-  background-image: url(/images/Compressed/Outro.jpg);
+  background-image: url(../images/Compressed/Outro.jpg);
   overflow: hidden;
   background-size: cover;
   background-position-y: 28%;
