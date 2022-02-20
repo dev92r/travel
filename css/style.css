@@ -697,11 +697,13 @@ body {
 .site-wrapper .picture-1 {
   background: url(../images/Compressed/Yercard.jpg) no-repeat center center;
   background-size: cover;
+  background-size: cover;
 }
 
 @media (max-width: 700px) {
   .site-wrapper .picture-1 {
     background: url(../images/Compressed/Yercard.jpg) no-repeat 85% center fixed;
+    background-size: cover;
     background-size: cover;
   }
 }
@@ -709,10 +711,12 @@ body {
 .site-wrapper .picture-2 {
   background: url(../images/Compressed/Gandikota.jpg) no-repeat center center fixed;
   background-size: cover;
+  background-size: cover;
 }
 
 .site-wrapper .picture-3 {
   background: url(../images/Compressed/Kovalam.jpg) no-repeat center center fixed;
+  background-size: cover;
   background-size: cover;
 }
 

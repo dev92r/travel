@@ -726,11 +726,19 @@ body {
     .picture-1 {
         background: url(../images/Compressed/Yercard.jpg) no-repeat center center;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     @media (max-width:700px) {
         .picture-1 {
             background: url(../images/Compressed/Yercard.jpg) no-repeat 85% center fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
         }
     }
@@ -738,10 +746,18 @@ body {
     .picture-2 {
         background: url(../images/Compressed/Gandikota.jpg) no-repeat center center fixed;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     .picture-3 {
         background: url(../images/Compressed/Kovalam.jpg) no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
     }
 
