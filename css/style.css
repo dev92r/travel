@@ -695,13 +695,13 @@ body {
 }
 
 .site-wrapper .picture-1 {
-  background: url(../images/Compressed/Yercard.png) no-repeat center center fixed;
+  background: url(../images/Compressed/Yercard.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
 @media (max-width: 700px) {
   .site-wrapper .picture-1 {
-    background: url(../images/Compressed/Yercard.png) no-repeat 85% center fixed;
+    background: url(../images/Compressed/Yercard.jpg) no-repeat 85% center fixed;
     background-size: cover;
   }
 }
@@ -717,13 +717,13 @@ body {
 }
 
 .site-wrapper .picture-4 {
-  background: url(../images/Compressed/Agumbe.png) no-repeat center center fixed;
+  background: url(../images/Compressed/Agumbe.jpeg) no-repeat center center fixed;
   background-size: cover;
 }
 
 @media (max-width: 700px) {
   .site-wrapper .picture-4 {
-    background: url(../images/Compressed/Agumbe.png) no-repeat 37% center fixed;
+    background: url(../images/Compressed/Agumbe.jpeg) no-repeat 37% center fixed;
     background-size: cover;
   }
 }
