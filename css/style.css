@@ -695,7 +695,7 @@ body {
 }
 
 .site-wrapper .picture-1 {
-  background: url(../images/Compressed/Yercard.jpg) no-repeat center center fixed;
+  background: url(../images/Compressed/Yercard.jpg) no-repeat center center;
   background-size: cover;
 }
 
