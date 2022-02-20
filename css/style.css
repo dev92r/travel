@@ -711,6 +711,7 @@ body {
 .site-wrapper .picture-2 {
   background: url(../images/Compressed/Gandikota.jpg) no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -718,17 +719,20 @@ body {
   background: url(../images/Compressed/Kovalam.jpg) no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .site-wrapper .picture-4 {
   background: url(../images/Compressed/Agumbe.jpeg) no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (max-width: 700px) {
   .site-wrapper .picture-4 {
     background: url(../images/Compressed/Agumbe.jpeg) no-repeat 37% center fixed;
     background-size: cover;
+    background-attachment: fixed;
   }
 }
 

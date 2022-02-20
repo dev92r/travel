@@ -746,10 +746,12 @@ body {
     .picture-2 {
         background: url(../images/Compressed/Gandikota.jpg) no-repeat center center fixed;
         background-size: cover;
+        background-attachment:fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        
     }
 
     .picture-3 {
@@ -759,17 +761,20 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        background-attachment:fixed;
     }
 
     .picture-4 {
         background: url(../images/Compressed/Agumbe.jpeg) no-repeat center center fixed;
         background-size: cover;
+        background-attachment:fixed;
     }
 
     @media (max-width:700px) {
         .picture-4 {
             background: url(../images/Compressed/Agumbe.jpeg) no-repeat 37% center fixed;
             background-size: cover;
+            background-attachment:fixed;
         }
     }
 
