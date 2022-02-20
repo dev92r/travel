@@ -733,6 +733,8 @@ body {
     background: url(../images/Compressed/Agumbe.jpeg) no-repeat 37% center fixed;
     background-size: cover;
     background-attachment: fixed;
+    height: 100%;
+    width: 100%;
   }
 }
 
