@@ -44,29 +44,29 @@ body {
 }
 
 .site-wrapper .container .container-text .short-description {
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 300;
   line-height: 1.6;
   color: #fff;
   text-align: justify;
 }
 
+@media (max-width: 1440px) {
+  .site-wrapper .container .container-text .short-description {
+    font-size: 1.75em;
+  }
+}
+
 @media (max-width: 700px) {
   .site-wrapper .container .container-text .short-description {
-    font-size: 17px;
+    font-size: 1.25em;
     text-align: left;
   }
 }
 
 @media (max-width: 900px) {
   .site-wrapper .container .container-text {
-    width: 70%;
-  }
-}
-
-@media (max-width: 700px) {
-  .site-wrapper .container .container-text {
-    width: 60%;
+    width: 75%;
   }
 }
 
@@ -695,7 +695,7 @@ body {
 }
 
 .site-wrapper .picture-1 {
-  background: url(../images/Compressed/Yercard.jpg) no-repeat center center;
+  background: url(../images/Compressed/Yercard.jpg) no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
 }
@@ -711,7 +711,6 @@ body {
 .site-wrapper .picture-2 {
   background: url(../images/Compressed/Gandikota.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -719,22 +718,17 @@ body {
   background: url(../images/Compressed/Kovalam.jpg) no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .site-wrapper .picture-4 {
-  background: url(../images/Compressed/Agumbe.jpeg) no-repeat center center fixed;
+  background: url(../images/Compressed/Agumbe.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 @media (max-width: 700px) {
   .site-wrapper .picture-4 {
-    background: url(../images/Compressed/Agumbe.jpeg) no-repeat 37% center fixed;
+    background: url(../images/Compressed/Agumbe.jpg) no-repeat 37% center fixed;
     background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
   }
 }
 
@@ -1003,6 +997,13 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 700px) {
+  .site-wrapper .container-1, .site-wrapper .container-2, .site-wrapper .container-3, .site-wrapper .container-4, .site-wrapper .container-5, .site-wrapper .container-6, .site-wrapper .container-7, .site-wrapper .container-8, .site-wrapper .container-9, .site-wrapper .container-10, .site-wrapper .container-11, .site-wrapper .container-12, .site-wrapper .container-13, .site-wrapper .container-14, .site-wrapper .container-15, .site-wrapper .container-16, .site-wrapper .container-17, .site-wrapper .container-18, .site-wrapper .container-19, .site-wrapper .container-20, .site-wrapper .container-21, .site-wrapper .container-22, .site-wrapper .container-23, .site-wrapper .container-24, .site-wrapper .container-25 {
+    height: auto;
+    padding: 100px 0px 100px 0px;
+  }
+}
+
 .site-wrapper .credits {
   background: #0b090a;
   padding: 10px 10px 20px 10px;
@@ -1035,7 +1036,7 @@ body {
 
 .site-wrapper .credits .credits-text-smaller {
   color: white;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.8;
   text-align: center;
 }
@@ -1125,5 +1126,39 @@ body {
   100% {
     background-position: top right;
   }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
 }
 /*# sourceMappingURL=style.css.map */
