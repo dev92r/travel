@@ -1,32 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
-
 * {
     padding: 0px;
     margin: 0px;
     font-family: 'Playfair Display', serif;
 }
-
-html, body {
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-}
-
-
 @mixin align-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .light {
     color: #fff;
 }
 .dark {
     color: #0b090a;
 }
-
 .site-wrapper {
     width: 100%;
     height: 100%;
@@ -53,7 +42,7 @@ html, body {
 
             @media (max-width:1440px) {
                 .short-description{
-                    font-size: 1.75em;
+                    font-size: 2em;
                 }
             }
     
@@ -1017,7 +1006,11 @@ section {
 
 
 .picture-1 {
-    background: url(../images/Compressed/Yercard.jpg) no-repeat center center fixed;
+    background: url('../images/Compressed/Yercard.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.picture-2 {
+    background: url('../images/Compressed/Agumbe.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
