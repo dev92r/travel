@@ -1009,6 +1009,17 @@ html, body {
     will-change: transform;
 }
 
+
+.picture-1 {
+    background: url(../images/Compressed/Yercard.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.picture-2 {
+    background: url(../images/Compressed/Gandikota.jpg) no-repeat center center;
+    background-size: cover;
+}
+
  @media (max-width:700px) {
         .picture-1 {
             background-position: 85% center;
