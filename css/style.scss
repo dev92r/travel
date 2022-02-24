@@ -987,6 +987,12 @@ html, body {
   }
 }
 
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .bg-wrap {
     clip: rect(0, auto, auto, 0);
     position: absolute;
@@ -1002,7 +1008,7 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center center;
     transform: translateZ(0);
