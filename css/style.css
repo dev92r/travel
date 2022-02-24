@@ -988,12 +988,12 @@ section {
 }
 
 .picture-1 {
-  background: url(../images/Compressed/Yercard.jpg) no-repeat center center;
+  background: url(../images/Compressed/Yercard.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
 .picture-2 {
-  background: url(../images/Compressed/Gandikota.jpg) no-repeat center center;
+  background: url(../images/Compressed/Gandikota.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
