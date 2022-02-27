@@ -411,19 +411,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .bg {
-    background-attachment: none;
-  }
-}
-
-@supports not (-webkit-touch-callout: none) {
-  /* CSS for other than iOS devices */
-  .bg {
-    background-attachment: fixed;
-  }
+  background-attachment: fixed;
 }
 
 @media (max-width: 700px) {
