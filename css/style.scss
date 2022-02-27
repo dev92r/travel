@@ -450,48 +450,23 @@ $minbiggerDesktop: 1441px;
   }
 }
 
-section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.bg-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .bg {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    transform: translateZ(0);
-    will-change: transform;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 @supports (-webkit-touch-callout: none) {
-    .picture-1 {
-        background: url(../images/Compressed/Yercard.jpg) no-repeat center center;
-        background-size: cover;
+    .bg {
         background-attachment: none;
     }
  }
  
  @supports not (-webkit-touch-callout: none) {
-    .picture-1 {
-        background: url(../images/Compressed/Yercard.jpg) no-repeat center center;
+      /* CSS for other than iOS devices */ 
+      .bg {
         background-attachment: fixed;
-        background-size: cover;
     }
  }
 
