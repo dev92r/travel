@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
-
 * {
     padding: 0px;
     margin: 0px;
     font-family: 'Playfair Display', serif;
+}
+html, body {
+    scroll-behavior: smooth;
 }
 $smallerPhone: 330px;
 $smallPhone: 360px;
@@ -15,7 +17,6 @@ $desktop: 1024px;
 $bigDesktop: 1200px;
 $biggerDesktop: 1440px;
 $minbiggerDesktop: 1441px;
-
 @mixin align-center {
     display: flex;
     justify-content: center;
@@ -73,32 +74,35 @@ $minbiggerDesktop: 1441px;
         @content;
     }
 }
-
 @mixin minextrabig1440 {
     @media (min-width: #{$minbiggerDesktop}) {
         @content;
     }
 }
-
 .site-wrapper {
     width: 100%;
     height: 100%;
     margin: 0px;
-
     .container {
         width: 100%;
         height: 100vh;
-        padding: 50px 0px 50px 0px;
+        @include extrabig1440 {
+            padding: 30px 0px 30px 0px;
+        }
+        @include tablet {
+            padding: 20px 0px 20px 0px;
+        }
+        @include mid600 {
+            padding: 40px 0px 40px 0px;
+        }
         position: relative;
         @include align-center;    
-
         .container-text {
             width: 800px;
             margin: auto;
             @include big900 {
                 width: 75%;
             }
-
             .short-description{
                 font-size: 2em;
                 font-weight: 300;
@@ -106,25 +110,18 @@ $minbiggerDesktop: 1441px;
                 color: #fff;
                 text-align: justify;
 
-                @include big900 {
-                    font-size: 1.75em;
-                    
-                }
-                @include tablet {
-                    font-size: 1.65em;
+                @include mid600 {
+                    font-size: 1.45em;
                     text-align: left;
                 }
-                @include mid600 {
-                    font-size: 1.55em;
-                }
                 @include mobile {
-                    font-size: 1.45em;
+                    font-size: 1.20em;
                 }
                 @include small360 {
-                    font-size: 1.35em;
+                    font-size: 1.15em;
                 }
-                @include small360 {
-                    font-size: 1.25em;
+                @include small330 {
+                    font-size: 1.10em;
                 }
             }
         }               
@@ -135,7 +132,6 @@ $minbiggerDesktop: 1441px;
         overflow: hidden;
         padding-top: 0px;
         position: relative;
-
         .main-heading {
             font-size: 8vw;
             color: rgba(255, 255, 255, 0.1);
@@ -160,7 +156,6 @@ $minbiggerDesktop: 1441px;
             animation: shimmer infinite 3s linear;
             position: relative;
         }
-    
         .main-sub-heading {
             font-size: 6vw;
             color: #fff; 
@@ -193,144 +188,160 @@ $minbiggerDesktop: 1441px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
+    //container
     .container-1 {
         background:#d19652;
         overflow:hidden;
     }
-
     .container-2 {
         background:#7f5539;
         overflow:hidden;
     }
-
     .container-3 {
         background:#669bbc;
         overflow:hidden;
     }
-
     .container-4 {
         background:#414833;
         overflow:hidden;
     }
-
     .container-5 {
         background:#8e412e;
         overflow:hidden;
     }
-
     .container-6 {
         background:#495057;
         overflow:hidden;
     }
-
     .container-7 {
         background:#9e7454;
         overflow:hidden;
     }
-
     .container-8 {
         background:#5e503f;
         overflow:hidden;
     }
-
     .container-9 {
         background:#728c35;
         overflow:hidden;
     }
-
     .container-10 {
         background:#a85832;
         overflow:hidden;
     }
-
     .container-11 {
         background:#653032;
         overflow:hidden;
     }
-
     .container-12 {
         background:#75a9c9;
         overflow:hidden;
     }
-
     .container-13 {
         background:#9e8e44;
         overflow:hidden;
     }
-
     .container-14 {
         background:#5e693a;
         overflow:hidden;
     }
-
     .container-15 {
         background:#8a6b3f;
         overflow:hidden;
     }
-
     .container-16 {
         background:#595957;
         overflow:hidden;
     }
-
     .container-17 {
         background:#414833;
         overflow:hidden;
     }
-
     .container-18 {
         background:#6e3f3c;
         overflow:hidden;
     }
-
     .container-19 {
         background:#d19652;
         overflow:hidden;
     }
-
     .container-20 {
         background:#a85832;
         overflow:hidden;
     }
-
     .container-21 {
         background:#5e693a;
         overflow:hidden;
     }
-
     .container-22 {
         background:#495057;
         overflow:hidden;
     }
-
     .container-23 {
         background:#728c35;
         overflow:hidden;
     }
-
     .container-24 {
         background:#685044;
         overflow:hidden;
     }
-
     .container-25 {
         background:#333533;
         overflow:hidden;
     }
-
-    @media (max-width:700px) {
+    @media (max-width:1200px) {
         .container-1,.container-2,.container-3,.container-4,.container-5,.container-6,.container-7,.container-8,.container-9,.container-10,.container-11,.container-12,.container-13,.container-14,.container-15,.container-16,.container-17,.container-18,.container-19,.container-20,.container-21,.container-22,.container-23,.container-24,.container-25 {
             height: auto;
-            padding: 100px 0px 100px 0px;
+            padding: 80px 0px 80px 0px;
         }
     }
-
+//Pictures
+.bg {
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+@supports (-webkit-touch-callout: none) {
+     /* CSS specific to iOS devices */ 
+    .bg {
+        background-attachment: none;
+    }
+ }
+ @supports not (-webkit-touch-callout: none) {
+      /* CSS for other than iOS devices */ 
+      .bg {
+        background-attachment: fixed;
+    }
+ }
+ @media (max-width:700px) {
+        .picture-1 {
+            background-position: 85% center;
+        }
+        .picture-4 {
+            background-position: 37% center;
+        }
+        .picture-5 {
+            background-position: 40% center;
+        }
+        .picture-6 {
+            background-position: 45% center;
+        }
+        .picture-9 {
+            background-position: 31% center;
+        }
+        .picture-10 {
+            background-position: 38% center;
+        }
+        .picture-20 {
+            background-position: 20% center;
+        }
+    }
+    ///Credits
     .credits {
         background: #0b090a;
         padding: 10px 10px 20px 10px;
         margin-top: 0px;
-
         a {
             text-decoration: none;
         }
@@ -373,24 +384,20 @@ $minbiggerDesktop: 1441px;
             }
         }  
     }
-
     .social-media-links {
         display: inline-block;
         padding: 14px 0px;
-
         svg {
             width: 22px;
             padding: 0px 10px;
         }
     }
-
     .scrollToprocket {
         padding: 10px;
         display: inline-block;
         position: relative;
         top: 6px;
         transition: top 400ms ease-in-out;
-
         img {
             width: 45px;
         }
@@ -400,29 +407,22 @@ $minbiggerDesktop: 1441px;
         top: 0px;
     }
 }
-
-
 //Scroll effect
-
 .fade-in {
     opacity: 0;
     transition: opacity 300ms ease-in;
 }
-
 .fade-in.appear {
     opacity: 1;
 }
-
 .from-left {
     -webkit-transform: translateX(-80%);
     transform: translateX(-80%);
 }
-
 .from-right {
     -webkit-transform: translateX(80%);
     transform: translateX(80%);
 }
-
 .from-left,
 .from-right {
   transition: opacity 300ms ease-in, -webkit-transform 600ms ease-in;
@@ -431,16 +431,13 @@ $minbiggerDesktop: 1441px;
     -webkit-transform 600ms ease-in;
   opacity: 0;
 }
-
 .from-left.appear,
 .from-right.appear {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
 }
-
 // Animations
-
 @keyframes shimmer {
   0% {
     background-position: top left;
@@ -450,229 +447,3 @@ $minbiggerDesktop: 1441px;
   }
 }
 
-.bg {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    // background-attachment: fixed;
-}
-
-@supports (-webkit-touch-callout: none) {
-    .bg {
-        background-attachment: none;
-    }
- }
- 
- @supports not (-webkit-touch-callout: none) {
-      /* CSS for other than iOS devices */ 
-      .bg {
-        background-attachment: fixed;
-    }
- }
-
-
-// @media (max-width:700px) {
-//     .picture-1 {
-//         background: url(../images/Compressed/Yercard.jpg) no-repeat 85% center fixed;
-//         background-size: cover;
-//         -webkit-background-size: cover;
-//         -moz-background-size: cover;
-//         -o-background-size: cover;
-//         background-size: cover;
-//     }
-// }
-
-// .picture-2 {
-//     background: url(../images/Compressed/Gandikota.jpg) no-repeat center center fixed;
-//     background-size: cover;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-
-// }
-
-// .picture-3 {
-//     background: url(../images/Compressed/Kovalam.jpg) no-repeat center center fixed;
-//     background-size: cover;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-// }
-
-// .picture-4 {
-//     background: url(../images/Compressed/Agumbe.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// @media (max-width:700px) {
-//     .picture-4 {
-//         background: url(../images/Compressed/Agumbe.jpg) no-repeat 37% center fixed;
-//         background-size: cover;
-//     }
-// }
-
-// .picture-5 {
-//     background: url(../images/Compressed/Badami.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// @media (max-width:700px) {
-//     .picture-5 {
-//         background: url(../images/Compressed/Badami.jpg) no-repeat 40% center fixed;
-//         background-size: cover;
-//     }
-// }
-
-// .picture-6 {
-//     background: url(../images/Compressed/EttinaBuja.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// @media (max-width:700px) {
-//     .picture-6 {
-//         background: url(../images/Compressed/EttinaBuja.jpg) no-repeat 45% center fixed;
-//         background-size: cover;
-//     }
-// }
-
-// .picture-7 {
-//     background: url(../images/Compressed/Goa.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-8 {
-//     background: url(../images/Compressed/Belur.jpg) no-repeat bottom center fixed;
-//     background-size: cover;
-// }
-
-// .picture-9 {
-//     background: url(../images/Compressed/Kodachadri.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// @media (max-width:700px) {
-//     .picture-9 {
-//         background: url(../images/Compressed/Kodachadri.jpg) no-repeat 31% center fixed;
-//         background-size: cover;
-//     }
-// }
-
-// .picture-10 {
-//     background: url(../images/Compressed/Pattadkal.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// @media (max-width:700px) {
-//     .picture-10 {
-//         background: url(../images/Compressed/Pattadkal.jpg) no-repeat 38% center fixed;
-//         background-size: cover;
-//     }
-// }
-
-// .picture-11 {
-//     background: url(../images/Compressed/Pondicherry.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-12 {
-//     background: url(../images/Compressed/Ramanagar.jpg) no-repeat top center fixed;
-//     background-size: cover;
-// }
-
-// .picture-13 {
-//     background: url(../images/Compressed/Aihole.jpg) no-repeat top center fixed;
-//     background-size: cover;
-// }
-
-// .picture-14 {
-//     background: url(../images/Compressed/Banasura.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-15 {
-//     background: url(../images/Compressed/Hampi.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-16 {
-//     background: url(../images/Compressed/HidlumaneFalls.jpg) no-repeat center 79% fixed;
-//     background-size: cover;
-// }
-
-// .picture-17 {
-//     background: url(../images/Compressed/Ooty.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-18 {
-//     background: url(../images/Compressed/Mysore.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-19 {
-//     background: url(../images/Compressed/Melkote2.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-20 {
-//     background: url(../images/Compressed/Anjanadri.jpg) no-repeat center 30% fixed;
-//     background-size: cover;
-// }
-
-// @media (max-width:700px) {
-//     .picture-20 {
-//         background: url(../images/Compressed/Anjanadri.jpg) no-repeat 33% 30% fixed;
-//         background-size: cover;
-//     }
-// }
-
-// .picture-21 {
-//     background: url(../images/Compressed/Devaramane.jpg) no-repeat center 75% fixed;
-//     background-size: cover;
-// }
-
-// .picture-22 {
-//     background: url(../images/Compressed/Gokarna.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-23 {
-//     background: url(../images/Compressed/Waynad.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-24 {
-//     background: url(../images/Compressed/Coorg.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
-// .picture-25 {
-//     background: url(../images/Compressed/Jog.jpg) no-repeat center center fixed;
-//     background-size: cover;
-// }
-
- @media (max-width:700px) {
-        .picture-1 {
-            background-position: 85% center;
-        }
-        .picture-4 {
-            background-position: 37% center;
-        }
-        .picture-5 {
-            background-position: 40% center;
-        }
-        .picture-6 {
-            background-position: 45% center;
-        }
-        .picture-9 {
-            background-position: 31% center;
-        }
-        .picture-10 {
-            background-position: 38% center;
-        }
-        .picture-10 {
-            background-position:  33% 30%;
-        }
-}
