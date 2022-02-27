@@ -4,7 +4,7 @@
     margin: 0px;
     font-family: 'Playfair Display', serif;
 }
-html, body {
+html,body {
     scroll-behavior: smooth;
 }
 $smallerPhone: 330px;
@@ -87,7 +87,7 @@ $minbiggerDesktop: 1441px;
         width: 100%;
         height: 100vh;
         @include extrabig1440 {
-            padding: 30px 0px 30px 0px;
+            padding: 40px 0px 40px 0px;
         }
         @include tablet {
             padding: 20px 0px 20px 0px;
@@ -314,6 +314,15 @@ $minbiggerDesktop: 1441px;
         background-attachment: fixed;
     }
  }
+ .picture-8 {
+    background-position: bottom center;
+}
+ .picture-16 {
+    background-position: center 75%;
+}
+ .picture-20 {
+    background-position: 50% 33%;
+}
  @media (max-width:700px) {
         .picture-1 {
             background-position: 85% center;

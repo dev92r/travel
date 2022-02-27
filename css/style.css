@@ -40,7 +40,7 @@ html, body {
 
 @media (max-width: 1440px) {
   .site-wrapper .container {
-    padding: 30px 0px 30px 0px;
+    padding: 40px 0px 40px 0px;
   }
 }
 
@@ -315,6 +315,18 @@ html, body {
   .site-wrapper .bg {
     background-attachment: fixed;
   }
+}
+
+.site-wrapper .picture-8 {
+  background-position: bottom center;
+}
+
+.site-wrapper .picture-16 {
+  background-position: center 75%;
+}
+
+.site-wrapper .picture-20 {
+  background-position: 50% 33%;
 }
 
 @media (max-width: 700px) {
