@@ -9,6 +9,11 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.blur {
+  -webkit-filter: blur(4px) brightness(0.8);
+          filter: blur(4px) brightness(0.8);
+}
+
 .light {
   color: #fff;
 }
@@ -475,5 +480,149 @@ html, body {
   100% {
     background-position: top right;
   }
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  width: 0%;
+  height: 100%;
+  background: #0b090a;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  z-index: 1;
+}
+
+.menu-wrapper.bg {
+  width: 30%;
+}
+
+@media (max-width: 1200px) {
+  .menu-wrapper.bg {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-wrapper.bg {
+    width: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-wrapper.bg {
+    width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-wrapper.bg {
+    width: 100%;
+  }
+}
+
+.menu-item {
+  padding: 70px 30px 50px 30px;
+  text-align: center;
+  background: #0b090a;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.menu-item-link {
+  font-size: 25px;
+  display: block;
+  margin: 40px 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#ed8080), color-stop(16%, #2a77d6), color-stop(32%, #5eb524), color-stop(48%, #eacd25), color-stop(64%, #ed8080), color-stop(80%, #2a77d6), to(#5eb524));
+  background: linear-gradient(to right, #ed8080 0%, #2a77d6 16%, #5eb524 32%, #eacd25 48%, #ed8080 64%, #2a77d6 80%, #5eb524 100%);
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: #222;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: shimmer infinite 3s linear;
+          animation: shimmer infinite 3s linear;
+  position: relative;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 40px;
+  height: 8px;
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+.hamburger-menu {
+  position: absolute;
+  right: 0;
+  margin: 30px 30px;
+  -webkit-transform: translateY(9px);
+          transform: translateY(9px);
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0ms 300ms;
+  transition: all 0ms 300ms;
+}
+
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 9px;
+  background: white;
+  -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  background: white;
+  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 /*# sourceMappingURL=style.css.map */

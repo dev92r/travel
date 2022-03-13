@@ -6,16 +6,12 @@ window.addEventListener('scroll', function() {
     heading.style.left = value * 2 + 'px';
     subheading.style.left = value * -2 + 'px';
 })
-
-
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.sliders');
-
 const appearOptions = {
     threshold:0,
     rootMargin: '0px 0px -150px 0px'
 };
-
 const appearOnScroll = new IntersectionObserver(function(
     entries,
     appearOnScroll
@@ -43,4 +39,10 @@ const appearOnScroll = new IntersectionObserver(function(
     $("html, body").animate(
       { scrollTop: "0" },4000);
 }
-
+(function () {
+	$('.menu-wrapper').on('click', function() {
+		$('.hamburger-menu').toggleClass('animate');
+    $(this).toggleClass('bg');
+    $('.site-wrapper').toggleClass('blur');
+	})
+})();
