@@ -558,6 +558,10 @@ html, body {
   position: relative;
 }
 
+.menu-item-link:nth-child(24) {
+  margin-bottom: 100px;
+}
+
 .hamburger-menu,
 .hamburger-menu:after,
 .hamburger-menu:before {

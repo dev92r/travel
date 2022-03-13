@@ -533,6 +533,9 @@ $bar-mb-spacing: 5px;
             animation: shimmer infinite 3s linear;
             position: relative;
     }
+    &-link:nth-child(24) {
+        margin-bottom: 100px;
+    }
 }
 .hamburger-menu,
 .hamburger-menu:after,
