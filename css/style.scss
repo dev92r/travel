@@ -463,9 +463,14 @@ $minbiggerDesktop: 1441px;
     height: 100vh;
     width: 100%;
 }
-$bar-width: 40px;
-$bar-height: 8px;
-$bar-spacing: 9px;
+$bar-width: 36px;
+$bar-height: 4px;
+$bar-spacing: 6px;
+
+$bar-mb-width: 20px;
+$bar-mb-height: 3px;
+$bar-mb-spacing: 5px;
+
 .menu-wrapper {
   position: fixed;
   top: 0;
@@ -533,15 +538,23 @@ $bar-spacing: 9px;
 .hamburger-menu:after,
 .hamburger-menu:before {
   width: $bar-width;
-	height: $bar-height;
-    border-radius: 2px;
+  height: $bar-height;
+  @include tablet {
+    width: $bar-mb-width;
+    height: $bar-mb-height;
+  }
+  border-radius: 2px;
     opacity: 0.8;
 }
 .hamburger-menu {
 	position: absolute;
     right:0;
-    margin: 30px 30px;
+    margin: 30px 30px 20px 20px;
 	transform: translateY($bar-spacing);
+    @include tablet {
+        margin: 20px 16px;
+        transform: translateY($bar-mb-spacing);
+    }
 	background: rgba(255, 255, 255, 0.8);
 	transition: all 0ms 300ms;
   
@@ -554,6 +567,9 @@ $bar-spacing: 9px;
 	position: absolute;
 	left: 0;
 	bottom: $bar-spacing;
+    @include tablet {
+        bottom: $bar-mb-spacing;
+    }
 	background: rgba(255, 255, 255, 1);
 	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -562,6 +578,9 @@ $bar-spacing: 9px;
 	position: absolute;
 	left: 0;
 	top: $bar-spacing;
+    @include tablet {
+        top: $bar-mb-spacing;
+    }
 	background: rgba(255, 255, 255, 1);
 	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
