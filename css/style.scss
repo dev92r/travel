@@ -296,8 +296,12 @@ $minbiggerDesktop: 1441px;
         background:#414833;
         overflow:hidden;
     }
+    .container-27 {
+        background:#495057;
+        overflow:hidden;
+    }
     @media (max-width:1200px) {
-        .container-1,.container-2,.container-3,.container-4,.container-5,.container-6,.container-7,.container-8,.container-9,.container-10,.container-11,.container-12,.container-13,.container-14,.container-15,.container-16,.container-17,.container-18,.container-19,.container-20,.container-21,.container-22,.container-23,.container-24,.container-25, .container-26 {
+        .container-1,.container-2,.container-3,.container-4,.container-5,.container-6,.container-7,.container-8,.container-9,.container-10,.container-11,.container-12,.container-13,.container-14,.container-15,.container-16,.container-17,.container-18,.container-19,.container-20,.container-21,.container-22,.container-23,.container-24,.container-25, .container-26, .container-27 {
             height: auto;
             padding: 80px 0px 80px 0px;
         }
@@ -537,7 +541,7 @@ $bar-mb-spacing: 5px;
             animation: shimmer infinite 3s linear;
             position: relative;
     }
-    &-link:nth-child(24) {
+    &-link:nth-child(26) {
         margin-bottom: 100px;
     }
 }
