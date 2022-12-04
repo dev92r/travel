@@ -290,8 +290,13 @@ html, body {
   overflow: hidden;
 }
 
+.site-wrapper .container-26 {
+  background: #414833;
+  overflow: hidden;
+}
+
 @media (max-width: 1200px) {
-  .site-wrapper .container-1, .site-wrapper .container-2, .site-wrapper .container-3, .site-wrapper .container-4, .site-wrapper .container-5, .site-wrapper .container-6, .site-wrapper .container-7, .site-wrapper .container-8, .site-wrapper .container-9, .site-wrapper .container-10, .site-wrapper .container-11, .site-wrapper .container-12, .site-wrapper .container-13, .site-wrapper .container-14, .site-wrapper .container-15, .site-wrapper .container-16, .site-wrapper .container-17, .site-wrapper .container-18, .site-wrapper .container-19, .site-wrapper .container-20, .site-wrapper .container-21, .site-wrapper .container-22, .site-wrapper .container-23, .site-wrapper .container-24, .site-wrapper .container-25 {
+  .site-wrapper .container-1, .site-wrapper .container-2, .site-wrapper .container-3, .site-wrapper .container-4, .site-wrapper .container-5, .site-wrapper .container-6, .site-wrapper .container-7, .site-wrapper .container-8, .site-wrapper .container-9, .site-wrapper .container-10, .site-wrapper .container-11, .site-wrapper .container-12, .site-wrapper .container-13, .site-wrapper .container-14, .site-wrapper .container-15, .site-wrapper .container-16, .site-wrapper .container-17, .site-wrapper .container-18, .site-wrapper .container-19, .site-wrapper .container-20, .site-wrapper .container-21, .site-wrapper .container-22, .site-wrapper .container-23, .site-wrapper .container-24, .site-wrapper .container-25, .site-wrapper .container-26 {
     height: auto;
     padding: 80px 0px 80px 0px;
   }
